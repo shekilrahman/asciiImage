@@ -15,13 +15,16 @@ document.getElementById('upload').addEventListener('change', function(event) {
         const ctx = canvas.getContext('2d');
         const ctxResized = canvasResized.getContext('2d');
 
+        const newFontSize = 12; 
+        const scalingFactor = 2; 
+        
         canvas.width = img.width;
         canvas.height = img.height;
+
         canvasResized.width = img.width * scalingFactor;
         canvasResized.height = img.height * scalingFactor;
 
-        const newFontSize = 12; 
-        const scalingFactor = 2; // to Download high quality image 
+       // to Download high quality image 
 
         const asciiArt = convertToASCII(img, img.width, img.height);
         drawASCIIArt(ctx, asciiArt, img.width, img.height); // for preview
