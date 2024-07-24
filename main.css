@@ -1,0 +1,15 @@
+body {
+    background-color: white;
+    color: white;
+    font-family: monospace;
+    margin: 20px;
+}
+button, input{
+    background-color:rgb(102, 102, 196);
+    border: 0;
+    color: bisque;
+    padding: 10px;
+    font-size: large;
+    margin: 10px;
+    border-radius: 5px;
+}
